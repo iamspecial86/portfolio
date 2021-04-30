@@ -1686,6 +1686,57 @@ button {
   height: 100vh;
 }
 
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.footer .container .footer_left {
+  width: 50%;
+}
+
+.footer .container .footer_left > h3 {
+  padding: 10vw 0 5vw 10vw;
+  font-size: 3vw;
+  font-weight: 200;
+}
+
+.footer .container .footer_left > h3 a {
+  font-size: 3vw;
+  font-weight: 500;
+}
+
+.footer .container .footer_left ul {
+  display: inline-block;
+}
+
+.footer .container .footer_left ul > li {
+  display: inline-block;
+}
+
+.footer .container .footer_left ul > li > h3 > span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #ffd992;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+
+.footer .container .footer_left ul > li > ul li {
+  display: block;
+}
+
+.footer .container .footer_right {
+  width: 50%;
+}
+
+.footer .container .footer_right figure {
+  width: 40%;
+}
+
 /* 미디어쿼리 */
 @media (max-width: 1500px) {
   .mobile .s2 .apple .mockup .mockup-wrap {

@@ -1219,6 +1219,48 @@ button {
 .footer {
   background: #fff;
   height: 100vh;
+  .container {
+    display: flex;
+    width: 100%;
+    .footer_left {
+      width: 50%;
+      & > h3 {
+        padding: 10vw 0 5vw 10vw;
+        font-size: 3vw;
+        font-weight: 200;
+        a {
+          font-size: 3vw;
+          font-weight: 500;
+        }
+      }
+      ul {
+        display: inline-block;
+        & > li {
+          display: inline-block;
+          & > h3 {
+            & > span {
+              display: inline-block;
+              width: 20px;
+              height: 20px;
+              background: #ffd992;
+              transform: rotate(35deg);
+            }
+          }
+          & > ul {
+            li {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    .footer_right {
+      width: 50%;
+      figure {
+        width: 40%;
+      }
+    }
+  }
 }
 
 /* 미디어쿼리 */
