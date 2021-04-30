@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+    <script src="./js/imagesloaded.pkgd.min.js"></script>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="progress">
+      <span class="progress-text">0</span>
+      <div class="loading-pulse"></div>
+    </div>
+    <div class="scroll">0</div>
+
+    <div class="nav-main" role="banner">
+      <div class="btn-menu-text">Hello</div>
+      <div class="btn-menu-ripple"></div>
+      <div class="btn-menu-wrap">
+        <div class="btn-menu-icon">
+          <div class="btn-menu-line-top"></div>
+          <div class="btn-menu-line-mid"></div>
+          <div class="btn-menu-line-bot"></div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="button" id="toggle">
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
+    </div> -->
+
+    <div class="overlay" id="overlay">
+      <nav class="overlay-menu">
+        <ul>
+          <li class="menu1"><a href="#section1">Home</a></li>
+          <li class="menu2"><a href="#section2">About</a></li>
+          <li class="menu3"><a href="#section3">Portfolio</a></li>
+          <li class="menu4"><a href="#section4">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- //고정메뉴 -->
+
+    <!-- 마우스 -->
+    <div id="scrollDown">
+      <div id="mouse">
+        <div id="wheel"></div>
+        <div class="scroll1"></div>
+        <div class="scroll2"></div>
+        <div class="scroll3"></div>
+      </div>
+    </div>
+    <!-- //마우스 -->
+
+    <!-- 컨텐츠 시작 -->
+    <div id="contents">
+      <!-- section1 -->
+      <section id="section1">
+        <div class="sec1">
+          <!-- <div class="main_text_title">Anthony's Portfolio</div> -->
+          <div class="sec1_wrapp">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M21.1,-21.7C27.9,-14.3,34.5,-7.1,36.1,1.7C37.8,10.4,34.5,20.9,27.7,27.6C20.9,34.3,10.4,37.4,1.6,35.7C-7.2,34.1,-14.4,27.9,-19.6,21.1C-24.8,14.4,-27.9,7.2,-28.4,-0.5C-28.8,-8.1,-26.6,-16.2,-21.4,-23.6C-16.2,-31.1,-8.1,-37.8,-0.5,-37.3C7.1,-36.8,14.3,-29.1,21.1,-21.7Z"
+                width="100%"
+                height="100%"
+                transform="translate(50 50)"
+                stroke-width="0"
+                style="transition: all 0.3s ease 0s"
+                stroke="url(#sw-gradient)"
+              ></path>
+            </svg>
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M30,-28.9C37.3,-22.7,40.6,-11.4,38.4,-2.1C36.3,7.2,28.9,14.3,21.6,21.2C14.3,28.1,7.2,34.7,-0.2,34.9C-7.5,35,-15,28.7,-20.2,21.9C-25.4,15,-28.3,7.5,-30.1,-1.8C-31.9,-11.2,-32.7,-22.3,-27.5,-28.4C-22.3,-34.6,-11.2,-35.6,0.1,-35.8C11.4,-35.9,22.7,-35,30,-28.9Z"
+                width="100%"
+                height="100%"
+                transform="translate(50 50)"
+              ></path>
+            </svg>
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24,-23C29.9,-18,32.8,-9,32.1,-0.7C31.4,7.6,27,15.2,21.1,20.5C15.2,25.9,7.6,29.1,-0.4,29.5C-8.4,29.9,-16.7,27.5,-23,22.1C-29.3,16.7,-33.5,8.4,-33.2,0.3C-33,-7.9,-28.3,-15.7,-22,-20.6C-15.7,-25.6,-7.9,-27.5,0.6,-28.1C9,-28.7,18,-27.9,24,-23Z"
+                width="100%"
+                height="100%"
+                transform="translate(50 50)"
+                stroke-width="0"
+              ></path>
+            </svg>
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.6,-19.3C26.9,-14.4,32.3,-7.2,32.9,0.6C33.5,8.4,29.3,16.8,23,24.1C16.8,31.5,8.4,37.9,0.4,37.5C-7.7,37.1,-15.3,30,-22.4,22.7C-29.4,15.3,-35.9,7.7,-36.4,-0.5C-37,-8.7,-31.5,-17.4,-24.5,-22.4C-17.4,-27.3,-8.7,-28.5,-0.8,-27.7C7.2,-27,14.4,-24.3,20.6,-19.3Z"
+                width="100%"
+                height="100%"
+                transform="translate(50 50)"
+                stroke-width="0"
+                style="transition: all 0.3s ease 0s"
+                stroke="url(#sw-gradient)"
+              ></path>
+            </svg>
+            <h1>Anthony's Portfolio</h1>
+          </div>
+        </div>
+      </section>
+      <!-- //section1 -->
+
+      <!-- section2 -->
+      <section id="section2">
+        <div class="sec2" data-2500="top:0%;" data-4500="top:-200%;">
+          <div class="tit">
+            <span class="about">About</span>
+            <span class="opc1">Portfolio</span>
+            <span class="opc1">Contact</span>
+          </div>
+        </div>
+
+        <div class="sec2_1">
+          <div class="atit">
+            <div class="text1">
+              <h2 class="t1">
+                <span>생각 속에만 있던 것들을</span>
+                <span>언어를 통해 생각 밖으로 구현시키는 코딩의 매력!</span>
+              </h2>
+            </div>
+            <div class="aimg" id="skrollr-body">
+              <div
+                data-4600=" left: 35%;top: 7.5%;"
+                data-5000=" left: 50%;top: 10%;transform:translate(-50%,0)"
+              >
+                <h5>Responsive</h5>
+                <span>Web</span>
+              </div>
+              <div
+                class="m_img1"
+                data-4600="left:-5%;top:0%;position:absolute;opacity:1;delayBefore:0;delay:0;transform:rotate(0deg)scale(1)translateZ(0);"
+                data-4800="left:-40%;top:2.5%;position:absolute;opacity:1;delayBefore:0;delay:0;transform:rotate(0deg)scale(1)translateZ(0);"
+                data-5000="left:-80%;top:10%;position:absolute;opacity:1;delayBefore:0;delay:0;transform:rotate(0deg)scale(1)translateZ(0);"
+              >
+                <img src="img/m-img1.png" alt="m_img1" />
+              </div>
+
+              <div
+                class="m_img2"
+                data-4600="right:-10%;top:10%;position:absolute;opacity:1;delayBefore:0;delay:0;transform:rotate(0deg)scale(1)translateZ(0);"
+                data-4800="right:-30%;top:12.5%;position:absolute;opacity:0;delayBefore:0;delay:0;transform:rotate(0deg)scale(1)translateZ(0);"
+              >
+                <img src="img/m-img2.png" alt="m_img2" />
+              </div>
+
+              <div
+                class="m_img3"
+                data-4600="right:0%;top:-5%;position:absolute;opacity:1;delayBefore:0;delay:0;transform:rotate(0deg)scale(1)translateZ(0);"
+                data-4800="right:-20%;top:-10%;position:absolute;opacity:0;delayBefore:0;delay:0;transform:rotate(0deg)scale(1)translateZ(0);"
+              >
+                <img src="img/m-img3.png" alt="m_img3" />
+              </div>
+              <div
+                class="m_img4"
+                data-4600="right:15%;top:4.5%;position:absolute;opacity:1;delayBefore:0;delay:0;transform:rotate(0deg)scale(1)translateZ(0);"
+                data-4750="right:22.5%;top:9%;position:absolute;opacity:1;delayBefore:0;delay:0;transform:rotate(0deg)scale(0.75)translateZ(0);"
+                data-4900="right:35%;top:12.5%;position:absolute;opacity:1;delayBefore:0;delay:0;transform:rotate(0deg)scale(0.5)translateZ(0);"
+                data-5100="right:35%;top:22.5%;position:absolute;opacity:1;delayBefore:0;delay:0;transform:rotate(0deg)scale(1.5)translateZ(0);"
+                data-5800="right:35%;top:22.5%;position:absolute;opacity:1;delayBefore:0;delay:0;transform:rotate(0deg)scale(1.5)translateZ(0);"
+                data-6000="right:35%;top:22.5%;position:absolute;opacity:0;delayBefore:0;delay:0;transform:rotate(0deg)scale(1.5)translateZ(0);"
+              >
+                <img src="img/model_u1.png" alt="" />
+              </div>
+              <div
+                class="m_img5"
+                data-4600="left:-1%;top:10%;position:absolute;opacity:1;delayBefore:0;delay:0;transform:rotate(45deg)scale(1)translateZ(0);;"
+                data-4800="left:-31%;top:12.5%;position:absolute;opacity:0;delayBefore:0;delay:0;transform:rotate(45deg)scale(1)translateZ(0);;"
+              >
+                <img src="img/re_m2.png" alt="" />
+              </div>
+              <div
+                class="img_6"
+                data-5000="position:absolute;top: 10%;left: 3%;opacity: 0;delayBefore:0;delay:0;transform:rotate(0)scale(1)translateZ(0);"
+                data-5100="position:absolute;top: 10%;left: 3%;opacity: 1;delayBefore:0;delay:0;transform:rotate(0)scale(1)translateZ(0);"
+                data-5300="position:absolute;top: 15%;left: 20%;opacity: 0.6;delayBefore:0;delay:0;transform:rotate(0)scale(0.8)translateZ(0);"
+                data-5600="position:absolute;top: 20%;left: 30%;opacity: 0;delayBefore:0;delay:0;transform:rotate(0)scale(0.5)translateZ(0);"
+              >
+                <img src="img/model_web1.png" alt="" />
+              </div>
+              <div
+                class="img_7"
+                data-5000="position: absolute;top: 9%; left: 73%;opacity:0;delayBefore:0;delay:0;transform:rotate(0)scale(1)translateZ(0);"
+                data-5100="position: absolute;top: 9%; left: 73%;opacity:1;delayBefore:0;delay:0;transform:rotate(0)scale(1)translateZ(0);"
+                data-5300="position: absolute;top: 14%; left: 55%;opacity:0.8;delayBefore:0;delay:0;transform:rotate(0)scale(0.8)translateZ(0);"
+                data-5600="position: absolute;top: 20%; left: 45%;opacity:0;delayBefore:0;delay:0;transform:rotate(0)scale(0.5)translateZ(0);"
+              >
+                <img src="img/model_web2.png" alt="" />
+              </div>
+              <div
+                class="img_8"
+                data-5000="position: absolute;left: 50%;top: 12.5%;opacity: 0;delayBefore:0;delay:0;transform:rotate(0)scale(1)translateZ(0)translate(-50%,0);"
+                data-5100="position: absolute;left: 50%;top: 12.5%;opacity: 1;delayBefore:0;delay:0;transform:rotate(0)scale(1)translateZ(0)translate(-50%,0);"
+                data-5300="position: absolute;left: 50%;top: 15%;opacity: 0.8;delayBefore:0;delay:0;transform:rotate(0)scale(0.8)translateZ(0)translate(-50%,0);"
+                data-5600="position: absolute;left: 50%;top: 20%;opacity: 0;delayBefore:0;delay:0;transform:rotate(0)scale(0.5)translateZ(0)translate(-50%,0);"
+              >
+                <img src="img/model_web3.png" alt="" />
+              </div>
+              <div
+                class="img_9"
+                data-5800="right:35%;top:22.5%;position:absolute;opacity:0;delayBefore:0;delay:0;transform:rotate(0deg)scale(1.5)translateZ(0);"
+                data-6000="right:35%;top:22.5%;position:absolute;opacity:1;delayBefore:0;delay:0;transform:rotate(0deg)scale(1.5)translateZ(0);"
+              >
+                <img src="img/model_m1.png" alt="" />
+              </div>
+              <div
+                class="img_10"
+                data-5800="left:50%;top:21.1%;position:absolute;opacity: 0;delayBefore:0;delay:0;transform:rotate(0)scale(1)translateZ(0)translate(-50%,0)"
+                data-6000="left:43%;top:25%;position:absolute;opacity: 0.6;delayBefore:0;delay:0;transform:rotate(0)scale(0.6)translateZ(0)translate(-50%,0)"
+                data-6200="left:50%;top:30%;position:absolute;opacity: 1;delayBefore:0;delay:0;transform:rotate(0)scale(1)translateZ(0)translate(-50%,0)"
+                data-6300="left:43%;top:36%;position:absolute;opacity: 0.7;delayBefore:0;delay:0;transform:rotate(0)scale(0.7)translateZ(0)translate(-50%,0)"
+                data-6400="left:42%;top:42%;position:absolute;opacity: 0;delayBefore:0;delay:0;transform:rotate(0)scale(0.2)translateZ(0)translate(-50%,0)"
+              >
+                <img src="img/model_web1.png" alt="" />
+              </div>
+              <div
+                class="img_11"
+                data-6000="left:50%;top:42%;position:absolute;opacity: 1;delayBefore:0;delay:0;transform:rotate(0)scale(1)translateZ(0)translate(-50%,0)"
+              >
+                <img src="img/model_m2.png" alt="" />
+              </div>
+
+              <div
+                class="img_13"
+                data-6300="left:50%;top:42.3%;position:absolute;opacity: 0;delayBefore:0;delay:0;transform:rotate(0)scale(1)translateZ(0)translate(-50%,0)"
+                data-6400="left:50%;top:42.3%;position:absolute;opacity: 1;delayBefore:0;delay:0;transform:rotate(0)scale(1)translateZ(0)translate(-50%,0)"
+                data-7000="left:50%;top:42.3%;position:absolute;opacity: 1;delayBefore:0;delay:0;transform:rotate(0)scale(1)translateZ(0)translate(-50%,0)"
+                data-7300="left:45%;top:50%;position:absolute;opacity: 0.7;delayBefore:0;delay:0;transform:rotate(0)scale(0.6)translateZ(0)translate(-50%,0)"
+                data-7600="left:45%;top:55%;position:absolute;opacity: 1;delayBefore:0;delay:0;transform:rotate(0)scale(0.6)translateZ(0)translate(-50%,0)"
+                data-7900="left:42%;top:58%;position:absolute;opacity: 0.6;delayBefore:0;delay:0;transform:rotate(0)scale(0.5)translateZ(0)translate(-50%,0)"
+                data-8200="left:42%;top:68%;position:absolute;opacity: 0.2;delayBefore:0;delay:0;transform:rotate(0)scale(0.2)translateZ(0)translate(-50%,0)"
+              >
+                <img src="img/model_web2.png" alt="" />
+              </div>
+              <div
+                class="img_14"
+                data-7800="left:50%;top:65%;position:absolute;opacity: 1;delayBefore:0;delay:0;transform:rotate(0)scale(1)translateZ(0)translate(-50%,0)"
+              >
+                <img src="img/model_m3.png" alt="" />
+              </div>
+              <div
+                class="img_15"
+                data-7900="left:50%;top:65.5%;position:absolute;opacity: 0;delayBefore:0;delay:0;transform:rotate(0)scale(1)translateZ(0)translate(-50%,0)"
+                data-8000="left:50%;top:65.5%;position:absolute;opacity: 1;delayBefore:0;delay:0;transform:rotate(0)scale(1)translateZ(0)translate(-50%,0)"
+              >
+                <img src="img/model_web3.png" alt="" />
+              </div>
+              <div
+                class="img_last1"
+                data-8800="left:50%;top:70%;position:absolute;opacity: 0;delayBefore:0;delay:0;transform:rotate(0)scale(0.3)translateZ(0)translate(-50%,0)"
+                data-9100="left:50%;top:83%;position:absolute;opacity: 1;delayBefore:0;delay:0;transform:rotate(0)scale(1)translateZ(0)translate(0,0)"
+                data-9300="left:65%;top:98%;position:absolute;opacity: 1;delayBefore:0;delay:0;transform:rotate(0)scale(1)translateZ(0)translate(0,0)"
+                data-9500="left:100%;top:113%;position:absolute;opacity: 0;delayBefore:0;delay:0;transform:rotate(0)scale(1)translateZ(0)translate(0,0)"
+              >
+                <img src="img/model_u1.png" alt="" />
+              </div>
+              <div
+                class="img_last2"
+                data-8800="left:50%;top:70%;position:absolute;opacity: 0;delayBefore:0;delay:0;transform:rotate(0)scale(0.4)translateZ(0)translate(-50%,0)"
+                data-9100="left:15%;top:79%;position:absolute;opacity: 1;delayBefore:0;delay:0;transform:rotate(0)scale(1)translateZ(0)translate(0,0)"
+                data-9300="left:0%;top:64%;position:absolute;opacity: 1;delayBefore:0;delay:0;transform:rotate(0)scale(1)translateZ(0)translate(0,0)"
+                data-9500="left:-30%;top:0%;position:absolute;opacity: 0;delayBefore:0;delay:0;transform:rotate(0)scale(1)translateZ(0)translate(0,0)"
+              >
+                <img src="img/model_u2.png" alt="" />
+              </div>
+              <div
+                class="img_last3"
+                data-8800="left:50%;top:70%;position:absolute;opacity: 0;delayBefore:0;delay:0;transform:rotate(0)scale(0.5)translateZ(0)translate(-50%,0)"
+                data-9100="left:30%;top:88%;position:absolute;opacity: 1;delayBefore:0;delay:0;transform:rotate(0)scale(1)translateZ(0)translate(0,0)"
+                data-9300="left:15%;top:98%;position:absolute;opacity: 1;delayBefore:0;delay:0;transform:rotate(0)scale(1)translateZ(0)translate(0,0)"
+                data-9500="left:-15%;top:115%;position:absolute;opacity: 0;delayBefore:0;delay:0;transform:rotate(0)scale(1)translateZ(0)translate(0,0)"
+              >
+                <img src="img/model_u3.png" alt="" />
+              </div>
+              <div
+                data-9200="left:50%;top:85%;position:absolute;opacity:0;transform:translate(-50%,0)scale(0);"
+                data-9400="left:50%;top:85%;position:absolute;opacity:1;transform:translate(-50%,0)scale(1);"
+              >
+                <span>창조적인 아이디어를 머릿 속이 아니라</span>
+              </div>
+              <div
+                data-9300="left:25%;top:90%;position:absolute;opacity:0;delay:0;transform:translate(0,0)scale(0);"
+                data-9500="left:25%;top:90%;position:absolute;opacity:1;delay:0;transform:translate(0,0)scale(1);"
+              >
+                <span>Web이라는 또 다른 세상에서</span>
+              </div>
+              <div
+                data-9400="left:57%;top:95%;position:absolute;opacity:0;delay:0;transform:translate(0,0)scale(0);"
+                data-9600="left:57%;top:95%;position:absolute;opacity:1;delay:0;transform:translate(0,0)scale(1);"
+              >
+                <span>표현하는 코딩의 매력</span>
+              </div>
+            </div>
+            <div class="text2">
+              <div class="text2_1">
+                <span class="t1">“</span>
+                <span class="t2">안녕하세요.</span>
+                <span
+                  >저는 <b>상상</b>하는 것을 만들 수 있다는 것에 매력을
+                  느끼고</span
+                >
+                <span
+                  >웹퍼블리싱과 프론트엔드의 세계에 입문한 <b>박하영</b> 이라고
+                  합니다</span
+                >
+                <br />
+                <span
+                  ><b>창조적인 가치</b>를 창출해 내는 것에 흥미가 있으며,</span
+                >
+                <span
+                  >린 스타트업 (Lean Startup) , 애자일 (Agile) 방법론 등</span
+                >
+                <span
+                  >개발자들을 창조적으로 괴롭힐 수 있는 혁신적인 방식을
+                  사랑합니다</span
+                >
+                <br />
+                <span>저를 좀 더 알고 싶다면</span>
+                <span><b>포트폴리오</b>를 통해 만나보세요.</span>
+                <span class="t1">”</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //section2 -->
+
+      <!-- section3 -->
+      <section id="section3">
+        <div class="sec3" data-12500="top: 0%;" data-13000="top: -100%;">
+          <div class="tit">
+            <span class="opc2">About</span>
+            <span class="Work">Portfolio</span>
+            <span class="opc2">Contact</span>
+          </div>
+        </div>
+        <div class="sec3_1" data-13500="left:0%" data-22500="left:-600%">
+          <div class="work_site">
+            <div class="s1">
+              <div class="ani_text">
+                <span
+                  data-13000="transform: translateY(200%); opacity:0;"
+                  data-13500="transform: translateY(0);  opacity:1;"
+                  >P</span
+                >
+                <span
+                  data-13000="transform: translateY(-200%);opacity:0;"
+                  data-13500="transform: translateY(0);opacity:1;"
+                  >o</span
+                >
+                <span
+                  data-13000="transform: translateY(200%);opacity:0;"
+                  data-13500="transform: translateY(0);opacity:1;"
+                  >r</span
+                >
+                <span
+                  data-13000="transform: translateY(-200%);opacity:0;"
+                  data-13500="transform: translateY(0);opacity:1;"
+                  >t</span
+                >
+                <span
+                  data-13000="transform: translateY(200%);opacity:0;"
+                  data-13500="transform: translateY(0);opacity:1;"
+                  >f</span
+                >
+                <span
+                  data-13000="transform: translateY(-200%);opacity:0;"
+                  data-13500="transform: translateY(0);opacity:1;"
+                  >o</span
+                >
+                <span
+                  data-13000="transform: translateY(200%);opacity:0;"
+                  data-13500="transform: translateY(0);opacity:1;"
+                  >l</span
+                >
+                <span
+                  data-13000="transform: translateY(-200%);opacity:0;"
+                  data-13500="transform: translateY(0);opacity:1;"
+                  >i</span
+                >
+                <span
+                  data-13000="transform: translateY(200%);opacity:0;"
+                  data-13500="transform: translateY(0);opacity:1;"
+                  >o</span
+                >
+              </div>
+            </div>
+            <div class="s2">
+              <div class="img">
+                <img src="img/project_m1.png" alt="웹표준사이트" />
+              </div>
+              <div class="num" data-13500="left:50%;" data-15000="left:80%;">
+                01
+              </div>
+              <div class="text">
+                <h2>Web standard</h2>
+                <p>
+                  웹표준을 준수하여 slick 제이쿼리 플러그인을 사용하여 동적인
+                  효과를 주었으며 data json을 활용하여 이미지 및 텍스트를
+                  로드하여 작업하였으며, 구글 map api를 활용하였으며 100%로 1인
+                  작업 및 창작으로 사이트를 리뉴얼했습니다.
+                </p>
+                <div class="btn">
+                  <a href="#" target="_blank">VIEW</a>
+                </div>
+              </div>
+            </div>
+            <div class="s3">
+              <div class="img">
+                <img src="img/project_m2.png" alt="#" />
+              </div>
+              <div class="num" data-15500="left:30%;" data-17500="left:80%;">
+                02
+              </div>
+              <div class="text">
+                <h2>Web responsive</h2>
+                <p>
+                  미디어 쿼리를 사용하여 디스플레이 종류에 따라 최적화 된
+                  화면구성을 보여주는 반응형 웹사이트를 제작하였습니다.
+                </p>
+                <div class="btn">
+                  <a href="#" target="_blank">VIEW</a>
+                </div>
+              </div>
+            </div>
+            <div class="s4">
+              <div class="img">
+                <img src="img/project_m3.png" alt="" />
+              </div>
+              <div class="num" data-18500="left:60%;" data-20500="left:80%;">
+                03
+              </div>
+              <div class="text">
+                <h2>코로나보드</h2>
+                <p>
+                  React를 활용한 코로나 상황판을 제작하였습니다. 코로나 현황은
+                  json를 통해 불러왔고, 그래프 및 차트는 리액트 플러그인을
+                  활용하였습니다.
+                </p>
+
+                <div class="btn">
+                  <a href="#" target="_blank">VIEW</a>
+                </div>
+              </div>
+            </div>
+            <div class="s5">
+              <div class="img">
+                <img src="#" alt="" />
+              </div>
+              <div class="num" data-20500="left:50%;" data-22500="left:80%;">
+                04
+              </div>
+              <div class="text">
+                <h2>미완성</h2>
+                <p>아직 미완성 된 현재 작업 중인 웹사이트입니다.</p>
+                <div class="btn">
+                  <a href="#" target="_blank">VIEW</a>
+                </div>
+              </div>
+            </div>
+            <div class="s6"></div>
+          </div>
+        </div>
+      </section>
+      <!-- //section3 -->
+
+      <!-- section4 -->
+      <section id="section4">
+        <div class="sec4" data-26500="top:0%;" data-28000="top:-200%;">
+          <div class="tit" data-23000="opacity:0;" data-23500="opacity:1;">
+            <span class="opc3">About</span>
+            <span class="opc3">Portfolio</span>
+            <span class="Contact">Contact</span>
+          </div>
+        </div>
+        <div class="sec4_1" data-27500="top:0%;" data-29500="top:-100%;">
+          <div class="ctit">
+            <div class="container">
+              <span class="t1">“</span>
+
+              <span> 코딩을 배우면서 코딩이 점 점 더 좋아지게 되었습니다.</span>
+              <span>상상하던 것을 만들 수 있는 것은 즐거운 입니다.</span>
+              <br />
+              <span>좋아하니까 즐기게 되고, 더 잘하고 싶어집니다.</span>
+              <span
+                >그러다보면 거기에 저의 열정이 담기게 되는 것 같습니다.</span
+              >
+              <span>목표를 향해 성큼성큼 나아가는 의지, </span>
+              <span
+                >새로운 것들을 창조해 나가는 영감, 그리고 이것을 사람들과
+                공유하며</span
+              >
+              <span>발전시켜나가는 혁신의 과정</span>
+              <br />
+              <span>이러한 일련의 과정을 좋아하고 사랑합니다.</span>
+              <span>좋아하는 일을 즐기면서 잘하는 것,</span>
+              <span>제가 꿈꾸는 저의 모습입니다</span>
+              <span class="t1">”</span>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="container">
+              <div>
+                <h3>
+                  Don't be shy<br />
+                  <a href="mailto:0all2u0@gmail.com">Say Hi</a>
+                </h3>
+                <ul>
+                  <li>
+                    <h3><span></span>Introduce</h3>
+                    <ul>
+                      <li><b>Name</b><span>박하영</span></li>
+                      <li><b>Nick</b><span>Anthony</span></li>
+                      <li>
+                        <b>Education</b
+                        ><span
+                          >2020 - 2021 강남그린컴퓨터 아카메디<br />
+                          NCS UI/UX 웹 퍼블리셔 교육 수료
+                        </span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h3><span></span>Contact</h3>
+                    <ul>
+                      <li>
+                        <span>Start Conversation</span
+                        ><a href="mailto:0all2u0@gmail.com"
+                          >0all2u0@gmail.com</a
+                        >
+                      </li>
+                      <li>Click on 'Say Hi' to start a conversation</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <ul></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //section4 -->
+    </div>
+    <!-- // contents -->
+  </body>
+</html>
