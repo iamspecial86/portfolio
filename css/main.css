@@ -694,38 +694,38 @@ button {
 }
 
 .overlay-menu ul .menu1 a:after {
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: linear-gradient(135deg, tomato 0%, #c3cfe2 100%);
 }
 
 .overlay-menu ul .menu2 a:after {
-  background: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#fee140));
-  background: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+  background: -webkit-gradient(linear, left top, right top, from(gold), to(#fee140));
+  background: linear-gradient(to right, gold 0%, #fee140 100%);
 }
 
 .overlay-menu ul .menu3 a:after {
-  background: -webkit-gradient(linear, right top, left top, from(#0ba360), to(#3cba92));
-  background: linear-gradient(to left, #0ba360 0%, #3cba92 100%);
+  background: -webkit-gradient(linear, right top, left top, from(lime), to(#3cba92));
+  background: linear-gradient(to left, lime 0%, #3cba92 100%);
 }
 
 .overlay-menu ul .menu4 a:after {
-  background: -webkit-gradient(linear, left top, right top, from(#92fe9d), to(#00c9ff));
-  background: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+  background: -webkit-gradient(linear, left top, right top, from(turquoise), to(#00c9ff));
+  background: linear-gradient(to right, turquoise 0%, #00c9ff 100%);
 }
 
 .homeColor {
-  background: #fff;
+  background: tomato;
 }
 
 .aboutColor {
-  background: #3366ff;
+  background: gold;
 }
 
 .portColor {
-  background: #000;
+  background: greenyellow;
 }
 
 .conColor {
-  background: #ad0000;
+  background: turquoise;
 }
 
 .textBlue {
@@ -1188,6 +1188,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+  font-family: 'Bebas Neue', cursive;
 }
 
 .tit span {
@@ -1459,6 +1460,7 @@ button {
 
 .sec3 .tit span {
   color: #fff;
+  font-family: 'Bebas Neue', cursive;
 }
 
 /*-- sec3_1 (work_site)-- */
@@ -1616,6 +1618,10 @@ button {
   left: 0;
   top: 0;
   width: 100vw;
+}
+
+.sec4 .tit {
+  font-family: 'Bebas Neue', cursive;
 }
 
 .sec4 .tit span {

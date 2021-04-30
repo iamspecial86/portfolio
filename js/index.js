@@ -215,9 +215,9 @@ $(function () {
     $(overlay).removeClass('show');
     $('.nav-main').addClass('inactive').removeClass('active');
   });
-
+  /* 
   home.mouseover(function () {
-    $(all).css('color', '#3366ff');
+    $(all).css('color', '#fff');
     $(overlay).addClass('homeColor');
   });
   home.mouseout(function () {
@@ -233,10 +233,10 @@ $(function () {
   });
 
   work.mouseover(function () {
-    $(all).css('color', '#00ff33');
+    $(overlay).addClass('portColor');
   });
   work.mouseout(function () {
-    $(all).css('color', '#fff');
+    $(overlay).removeClass('portColor');
   });
 
   contact.mouseover(function () {
@@ -244,5 +244,5 @@ $(function () {
   });
   contact.mouseout(function () {
     $(overlay).removeClass('conColor');
-  });
+  }); */
 });

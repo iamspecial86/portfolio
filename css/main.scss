@@ -422,6 +422,7 @@ button {
         text-decoration: none;
         overflow: hidden;
         color: #fff;
+
         text-shadow: 1px 3px 1px rgba(0, 0, 0, 0.44);
         &:after {
           content: '';
@@ -440,31 +441,31 @@ button {
     }
 
     .menu1 a:after {
-      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      background: linear-gradient(135deg, tomato 0%, #c3cfe2 100%);
     }
     .menu2 a:after {
-      background: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+      background: linear-gradient(to right, gold 0%, #fee140 100%);
     }
     .menu3 a:after {
-      background: linear-gradient(to left, #0ba360 0%, #3cba92 100%);
+      background: linear-gradient(to left, lime 0%, #3cba92 100%);
     }
     .menu4 a:after {
-      background: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+      background: linear-gradient(to right, turquoise 0%, #00c9ff 100%);
     }
   }
 }
 
 .homeColor {
-  background: #fff;
+  background: tomato;
 }
 .aboutColor {
-  background: #3366ff;
+  background: gold;
 }
 .portColor {
-  background: #000;
+  background: greenyellow;
 }
 .conColor {
-  background: #ad0000;
+  background: turquoise;
 }
 .textBlue {
   color: #3366ff;
@@ -776,6 +777,7 @@ button {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-family: 'Bebas Neue', cursive;
   span {
     position: relative;
     margin-right: 6vw;
@@ -1010,6 +1012,7 @@ button {
   .tit {
     span {
       color: #fff;
+      font-family: 'Bebas Neue', cursive;
     }
   }
 }
@@ -1159,6 +1162,7 @@ button {
     width: 100vw;
   }
   .tit {
+    font-family: 'Bebas Neue', cursive;
     span {
       color: #000;
     }
