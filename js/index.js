@@ -47,7 +47,7 @@ $(function () {
     let text1 = $('.atit .text1').offset().top;
     let text2 = $('.atit .text2').offset().top;
     let aimg = $('.sec2_1 .aimg').offset().top;
-    let atit = $('.sec2_1 .atit').offset().top;
+    let atit = $('.sec2_1').offset().top;
     let sec2 = $('#section2').offset().top;
     let section3 = $('#section3').offset().top;
     let btnText = $('.btn-menu-text').text();
@@ -91,7 +91,7 @@ $(function () {
       $('#mouse .scroll2').css('border-top', '5px solid #fff');
       $('#mouse .scroll3').css('border-top', '5px solid #fff');
     }
-    if (wScroll >= sec2 && wScroll < 3000) {
+    if (wScroll >= sec2 && wScroll < 2500) {
       $('#mouse').css('border', '2px solid #000');
       $('#wheel').css('background-color', '#000');
       $('#mouse .scroll1').css('border-top', '5px solid #000');
@@ -99,7 +99,7 @@ $(function () {
       $('#mouse .scroll3').css('border-top', '5px solid #000');
       $('#mouse').css('display', 'block');
     }
-    if ((wScroll >= 3000) & (wScroll < sec3)) {
+    if ((wScroll >= 2500) & (wScroll < sec3)) {
       $('#mouse').css('display', 'none');
     }
     if (wScroll >= sec3 && wScroll < work) {
