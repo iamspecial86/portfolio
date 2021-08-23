@@ -5,6 +5,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', 'Nanum Gothic', sans-serif;
 }
 
 /* a 링크 초기화 */
@@ -114,8 +115,8 @@ button {
 }
 
 .left {
-  -webkit-transform: translateX(-30vw);
-          transform: translateX(-30vw);
+  -webkit-transform: translateX(-27vw);
+          transform: translateX(-27vw);
 }
 
 .typing {
@@ -936,7 +937,6 @@ button {
   -webkit-transform: translate(-50%, -55%);
           transform: translate(-50%, -55%);
   font-size: 20px;
-  font-family: 'Roboto Mono';
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -1004,6 +1004,7 @@ button {
   background: rgba(255, 255, 255, 0.4);
   color: #000;
   z-index: 9998;
+  opacity: 0;
 }
 
 /* sec1 (home) */
@@ -1428,7 +1429,6 @@ button {
 .atit .text2 .t1 {
   font-size: 5vw;
   padding: 5vw 0;
-  font-family: 'Nanum Myeongjo';
   color: #000;
 }
 
@@ -1562,7 +1562,6 @@ button {
   color: #fff;
   font-weight: 100;
   font-size: 1vw;
-  font-family: 'Fugaz One';
 }
 
 .sec3_1 .work_site > div .img {
@@ -1592,6 +1591,7 @@ button {
 
 .sec3_1 .work_site > div.s1 .ani_text span {
   display: inline-block;
+  font-family: 'Bebas Neue', cursive;
 }
 
 .sec3_1 .work_site > div:nth-of-type(4) .img {
@@ -1659,7 +1659,6 @@ button {
 .ctit .container .t1 {
   font-size: 5vw;
   padding: 5vw 0;
-  font-family: 'Nanum Myeongjo';
   color: #000;
 }
 
@@ -1677,6 +1676,7 @@ button {
 .ctit .container span {
   display: block;
   font-family: 'S-CoreDream-3Light';
+  font-weight: 200;
   color: #333;
   padding-bottom: 1vh;
 }
@@ -1691,6 +1691,7 @@ button {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  padding-top: 3vw;
 }
 
 .footer .container .footer_left {
@@ -1708,25 +1709,70 @@ button {
   font-weight: 500;
 }
 
-.footer .container .footer_left ul {
+.footer .container .footer_left > ul {
+  display: inline-block;
+  margin-top: 10vw;
+  padding-left: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: bottom;
+      -ms-flex-align: bottom;
+          align-items: bottom;
+}
+
+.footer .container .footer_left > ul > li {
   display: inline-block;
 }
 
-.footer .container .footer_left ul > li {
-  display: inline-block;
+.footer .container .footer_left > ul > li:nth-of-type(2) {
+  margin-left: 2vw;
 }
 
-.footer .container .footer_left ul > li > h3 > span {
+.footer .container .footer_left > ul > li > h3 {
+  font-size: 1.2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.5vw;
+}
+
+.footer .container .footer_left > ul > li > h3 > span {
   display: inline-block;
   width: 20px;
   height: 20px;
   background: #ffd992;
   -webkit-transform: rotate(35deg);
           transform: rotate(35deg);
+  z-index: 1;
+  display: inline-block;
 }
 
-.footer .container .footer_left ul > li > ul li {
-  display: block;
+.footer .container .footer_left > ul > li > h3 > div {
+  z-index: 2;
+  display: inline-block;
+}
+
+.footer .container .footer_left > ul .contact_inftitle {
+  font-family: 'NanumSquare', sans-serif;
+  font-weight: 500;
+  padding-right: 1vw;
+  font-size: 0.8vw;
+}
+
+.footer .container .footer_left > ul .contact_infotext {
+  font-family: 'NanumSquare', sans-serif;
+  font-weight: 100;
+  font-size: 0.7vw;
+}
+
+.footer .container .footer_left > ul .contact_infoclick {
+  font-family: 'Poppins', cursive;
+  font-weight: 200;
+  font-size: 0.8vw;
 }
 
 .footer .container .footer_right {
@@ -1734,7 +1780,17 @@ button {
 }
 
 .footer .container .footer_right figure {
-  width: 40%;
+  width: 35%;
+  margin-top: 12vw;
+  margin-left: 15vw;
+}
+
+.footer .container .footer_right figure figcaption {
+  font-family: 'NanumSquare', sans-serif;
+  font-weight: 100;
+  font-size: 1vw;
+  margin-top: 1vw;
+  text-align: right;
 }
 
 /* 미디어쿼리 */

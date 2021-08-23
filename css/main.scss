@@ -1,10 +1,11 @@
 /* 폰트 */
-@import 'font.css';
+@import './font.css';
 
 /* 여백 초기화 */
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', 'Nanum Gothic', sans-serif;
 }
 
 /* a 링크 초기화 */
@@ -103,7 +104,7 @@ button {
   transform: translateX(4vw);
 }
 .left {
-  transform: translateX(-30vw);
+  transform: translateX(-27vw);
 }
 .typing {
   width: 45%;
@@ -612,7 +613,7 @@ button {
     top: 55%;
     transform: translate(-50%, -55%);
     font-size: 20px;
-    font-family: 'Roboto Mono';
+
     color: rgba(255, 255, 255, 0.5);
   }
 
@@ -666,6 +667,7 @@ button {
   background: rgba(255, 255, 255, 0.4);
   color: #000;
   z-index: 9998;
+  opacity: 0;
 }
 /* sec1 (home) */
 .sec1 {
@@ -982,7 +984,7 @@ button {
     .t1 {
       font-size: 5vw;
       padding: 5vw 0;
-      font-family: 'Nanum Myeongjo';
+
       color: #000;
       &:last-child {
         padding-top: 8vw;
@@ -1097,7 +1099,6 @@ button {
             color: #fff;
             font-weight: 100;
             font-size: 1vw;
-            font-family: 'Fugaz One';
           }
         }
       }
@@ -1123,6 +1124,7 @@ button {
           transform: translate(0%, -50%);
           span {
             display: inline-block;
+            font-family: 'Bebas Neue', cursive;
           }
         }
       }
@@ -1195,7 +1197,7 @@ button {
     .t1 {
       font-size: 5vw;
       padding: 5vw 0;
-      font-family: 'Nanum Myeongjo';
+
       color: #000;
       &:last-child {
         padding-top: 8vw;
@@ -1210,6 +1212,8 @@ button {
     span {
       display: block;
       font-family: 'S-CoreDream-3Light';
+      font-weight: 200;
+
       color: #333;
       padding-bottom: 1vh;
     }
@@ -1222,6 +1226,7 @@ button {
   .container {
     display: flex;
     width: 100%;
+    padding-top: 3vw;
     .footer_left {
       width: 50%;
       & > h3 {
@@ -1233,31 +1238,73 @@ button {
           font-weight: 500;
         }
       }
-      ul {
+      & > ul {
         display: inline-block;
+        margin-top: 10vw;
+        padding-left: 10vw;
+        display: flex;
+        align-items: bottom;
+
         & > li {
           display: inline-block;
+          &:nth-of-type(2) {
+            margin-left: 2vw;
+          }
+
           & > h3 {
+            font-size: 1.2vw;
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5vw;
+
             & > span {
               display: inline-block;
               width: 20px;
               height: 20px;
               background: #ffd992;
               transform: rotate(35deg);
+              z-index: 1;
+              display: inline-block;
+            }
+            & > div {
+              z-index: 2;
+              display: inline-block;
             }
           }
-          & > ul {
-            li {
-              display: block;
-            }
-          }
+        }
+        .contact_inftitle {
+          font-family: 'NanumSquare', sans-serif;
+          font-weight: 500;
+          padding-right: 1vw;
+          font-size: 0.8vw;
+        }
+        .contact_infotext {
+          font-family: 'NanumSquare', sans-serif;
+          font-weight: 100;
+          font-size: 0.7vw;
+        }
+        .contact_infoclick {
+          font-family: 'Poppins', cursive;
+          font-weight: 200;
+          font-size: 0.8vw;
         }
       }
     }
     .footer_right {
       width: 50%;
+
       figure {
-        width: 40%;
+        width: 35%;
+        margin-top: 12vw;
+        margin-left: 15vw;
+
+        figcaption {
+          font-family: 'NanumSquare', sans-serif;
+          font-weight: 100;
+          font-size: 1vw;
+          margin-top: 1vw;
+          text-align: right;
+        }
       }
     }
   }
